@@ -19,6 +19,10 @@ mongoose.connect("mongodb+srv://rahul22111212:pKZ5GY4WsCXDv319@rahulrampal.onxcw
 	useUnifiedTopology: true,
 });
 
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
+
 // Routes
 app.get("/messages", async (req, res) => {
 	try {
